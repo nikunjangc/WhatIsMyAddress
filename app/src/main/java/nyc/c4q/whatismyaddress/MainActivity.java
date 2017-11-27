@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
                 SharedPreferences.Editor editor=save.edit();
                 editor.putString(email.getText().toString(),email.getText().toString());
-                editor.commit();
+                editor.apply();
                 Toast t = Toast.makeText(getApplicationContext(), ""+email.getText(), Toast.LENGTH_LONG);
                 t.show();
 

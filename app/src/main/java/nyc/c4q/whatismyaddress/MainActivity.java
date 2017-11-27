@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =  new Intent(MainActivity.this,RecyclerActivity.class);
+                 intent.putExtra("sharedPref",SHARED_PREFS_KEY);
                 startActivity(intent);
 
             }
